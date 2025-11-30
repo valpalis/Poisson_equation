@@ -16,7 +16,7 @@ double u_real(double x, double y){
 int main() {
     double eps = 0.000001, w = 1.25;
 
-    std::vector<int> N = {50, 100};
+    std::vector<int> N = {50, 100, 150};
 	std::vector<int> num_threads = {1, 2, 3, 4};
     std::vector<double> h(N.size(), 0.0);
     for (int i = 0; i< h.size(); ++i){
@@ -72,3 +72,4 @@ int main() {
     }    
     return 0;
 }
+
